@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <title>Places</title>
+  </head>
+  <body>
+    <!-- Header Title -->
+    <div class="container">
+      <div class="row">
+        <div class="col-1">
+          <h1>Places</h1>
+        </div>
+        <div class="col mt-4 ps-4">
+          <p
+            class="text-secondary fw-bold font-sizing"
+            style="--bs-text-opacity: 0.75"
+          >
+            Aenean commodo dolor, sit amet consectetur adipisicing.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Cards Container -->
+    <div class="container">
+      <div
+        class="g-4 row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xxl-4"
+      >
+        <!-- Individual cards -->
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/camel.jpg"
+              class="card-img-top rounded-0"
+              alt="camel"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                egypt tangbia
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Denatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >22 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/venice.jpg"
+              class="card-img-top rounded-0"
+              alt="venice"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                olling phisotip
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >13 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/water.jpg"
+              class="card-img-top rounded-0"
+              alt="water"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">cortia dyna</h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >8 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/town.jpg"
+              class="card-img-top rounded-0"
+              alt="town"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                sysne of dubai
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >7 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/camel.jpg"
+              class="card-img-top rounded-0"
+              alt="camel"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                egypt tangbia
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Denatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >22 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/venice.jpg"
+              class="card-img-top rounded-0"
+              alt="venice"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                olling phisotip
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >13 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/water.jpg"
+              class="card-img-top rounded-0"
+              alt="water"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">cortia dyna</h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >8 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/town.jpg"
+              class="card-img-top rounded-0"
+              alt="town"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                sysne of dubai
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >7 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/camel.jpg"
+              class="card-img-top rounded-0"
+              alt="camel"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                egypt tangbia
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Denatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >22 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/venice.jpg"
+              class="card-img-top rounded-0"
+              alt="venice"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                olling phisotip
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >13 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/water.jpg"
+              class="card-img-top rounded-0"
+              alt="water"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">cortia dyna</h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >8 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div
+            class="card rounded-0"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <img
+              src="src/images/town.jpg"
+              class="card-img-top rounded-0"
+              alt="town"
+            />
+            <div class="card-body bg-secondary" style="--bs-bg-opacity: 0.09">
+              <h5 class="card-title text-center text-uppercase">
+                sysne of dubai
+              </h5>
+              <p
+                class="card-text text-center text-secondary fw-bold"
+                style="--bs-text-opacity: 0.75"
+              >
+                Penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus
+              </p>
+            </div>
+            <div
+              class="card-footer text-muted border-0 bg-secondary d-flex justify-content-between"
+              style="--bs-bg-opacity: 0.09"
+            >
+              <div>
+                <i class="bi bi-calendar"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >Aug 5, 2013</span
+                >
+              </div>
+
+              <div>
+                <i class="bi bi-chat"></i>
+                <span
+                  class="text-secondary fw-bold"
+                  style="--bs-text-opacity: 0.45"
+                  >7 comments</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header no-border">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body d-flex">
+                <img src="" alt="img" class="card-img-modal" />
+                <div class="mx-4">
+                  <h5 class="text-uppercase"></h5>
+                  <p
+                    class="text-secondary fw-bold"
+                    style="--bs-text-opacity: 0.75"
+                  ></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="bg mt-5">
+      <div class="container">
+        <footer class="py-5">
+          <div class="flex-column flex-sm-row row">
+            <div class="col-md-4 col-12">
+              <h4 class="text-uppercase text-white">Contact Us</h4>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-white py-1">
+                  <i class="bi bi-geo-alt-fill" style="font-size: 20px"></i>
+                  <span
+                    >Our business address is 1063 Freelon Street San Francisco,
+                    CA 95108</span
+                  >
+                </li>
+                <li class="nav-item mb-2 text-white py-1">
+                  <i class="bi bi-phone-fill" style="font-size: 20px"></i>
+                  <span>+ 020.566.2345 / or + 020.566.9876</span>
+                </li>
+                <li class="nav-item mb-2 text-white py-1">
+                  <i class="bi bi-envelope" style="font-size: 20px"></i>
+                  <span>supportclient@decou.com</span>
+                </li>
+                <li class="nav-item mb-2 py-2">
+                  <button
+                    class="btn btn-light text-color fw-bold"
+                    style="border-radius: 0"
+                    type="button"
+                  >
+                    Contact form
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-12">
+              <form>
+                <h4 class="text-uppercase text-white">connect with us</h4>
+
+                <div class="text-white my-3">
+                  <i class="bi bi-facebook px-2" style="font-size: 60px"></i>
+                  <i class="bi bi-pinterest px-2" style="font-size: 60px"></i>
+                  <i class="bi bi-facebook px-2" style="font-size: 60px"></i>
+                </div>
+                <p class="border-top py-3 text-light">
+                  Sign up today and never miss another deal again.
+                </p>
+                <div class="d-flex w-100">
+                  <label for="newsletter1 text-muted" class="visually-hidden"
+                    >email address</label
+                  >
+                  <span
+                    class="input-group-text text-muted"
+                    id="basic-addon1"
+                    style="border-radius: 0"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-envelope"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <input
+                    id="newsletter1"
+                    type="text"
+                    class="form-control bg-light"
+                    placeholder="Your e-mail address"
+                    style="border-radius: 0; --bs-bg-opacity: 0.9"
+                  />
+                  <button
+                    class="btn bg-light text-nowrap text-color fw-bold"
+                    type="button"
+                    style="--bs-bg-opacity: 0.9; border-radius: 0"
+                  >
+                    Sign Up!
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-4 col-12">
+              <h4 class="text-uppercase text-white">About us</h4>
+              <div class="flex-column text-light">
+                <span class="mb-2">
+                  <p>
+                    Consectetur adipiscing elit, <br />
+                    Aenean nisl orci, condimentum <br />
+                    ultrices consequat eu
+                  </p>
+                </span>
+                <ul>
+                  <li class="mb-2">
+                    <span
+                      >Aenean imperdiet fringilla ligula, ut mollis mi
+                      venenatis</span
+                    >
+                  </li>
+                  <li class="mb-2">
+                    <span>Nunc ullamcorper cursus eros pulvinar</span>
+                  </li>
+                </ul>
+                <i class="bi bi-arrow-right" style="font-size: 40px"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Jquery js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- My js -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
